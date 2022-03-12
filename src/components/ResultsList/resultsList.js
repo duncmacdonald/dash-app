@@ -33,16 +33,16 @@ export default class ResultsList extends React.Component {
     //multiply amount by conversion, display those conversions, presentation...
 
     render(){
-        let moneyJSX = Object.keys(this.state.table).map(key => {
-                return(<div className="result-container">
-                    <div><Flag currency={key}/></div> 
+        let moneyJSX = Object.keys(this.state.table).map((key, index) => {
+                return(
+                <div className="result-container" key={index}>
+                    <div><Flag currency={key} key={key}/></div> 
                     <div><p>{key}</p></div>
                     <div><p>{this.state.table[key].toFixed(2)}</p></div>
                 </div>)
-                console.log(key);
             })
         if(moneyJSX.length > 1){
-            moneyJSX[0] = (<p className="time">Last Updated: {this.state.timestamp.slice(0,-5)}</p>);
+            moneyJSX[0] = (<p className="time" key="Duncan">Last Updated: {this.state.timestamp.slice(0,-5)}</p>);
         }
         
 

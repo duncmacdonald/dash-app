@@ -14,7 +14,7 @@ import ResultsList from '../ResultsList/resultsList';
 export default class Forms extends React.Component{
     state = {
         amount: "",
-        currency: "EUR",
+        currency: "USD",
     };
 
     handleChange = (event) => {
@@ -50,6 +50,11 @@ export default class Forms extends React.Component{
                                     <MenuItem value={"EUR"}>EUR</MenuItem>
                                     <MenuItem value={"USD"}>USD</MenuItem>
                                     <MenuItem value={"CAD"}>CAD</MenuItem>
+                                    <MenuItem value={"GBP"}>GBP</MenuItem>
+                                    <MenuItem value={"CHF"}>CHF</MenuItem>
+                                    <MenuItem value={"KYD"}>KYD</MenuItem>
+                                    <MenuItem value={"JOD"}>JOD</MenuItem>
+                                    <MenuItem value={"BDT"}>BDT</MenuItem>
                                 </Select>
                             </FormControl>
                         </Box>
