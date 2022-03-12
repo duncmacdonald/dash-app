@@ -1,0 +1,18 @@
+.result-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  border-top: 1px solid gray;
+  margin-left: 1rem;
+  padding: 1rem 0;
+  width: 22rem;
+}
+.result-container div {
+  width: 32px;
+}
+
+.time {
+  margin-left: 1rem;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=resultsList.css.map */

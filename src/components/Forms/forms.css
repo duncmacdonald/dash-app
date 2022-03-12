@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.form-input {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=forms.css.map */
